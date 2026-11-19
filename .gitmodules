@@ -1,0 +1,3 @@
+[submodule "upstream/datafaker"]
+	path = upstream/datafaker
+	url = https://github.com/datafaker-net/datafaker.git

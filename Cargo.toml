@@ -1,0 +1,29 @@
+[package]
+name = "datafaker"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Unofficial Rust port of Datafaker 2.7.0 (Java): fake data from the same locale files, identical to Datafaker's for the same java.util.Random seed"
+rust-version = "1.88"
+repository = "https://github.com/oxidestack/datafaker"
+homepage = "https://oxidestack.github.io/datafaker/"
+documentation = "https://docs.rs/datafaker"
+readme = "README.md"
+keywords = ["fake", "faker", "datafaker", "test-data", "mock"]
+categories = ["development-tools::testing"]
+# What crates.io gets: the library, its licence and notice, the README and the changelog. The pinned
+# upstream sources, the tests and their recorded vectors, the tools, the docs and the site stay in the
+# repository.
+include = ["/src/**", "/LICENSE", "/NOTICE", "/README.md", "/CHANGELOG.md", "/build.rs", "/resources/**"]
+
+[dependencies]
+indexmap = "2"
+libphonenumber = { path = "../libphonenumber-rs", version = "0.1.0" }
+num-bigint = "0.4"
+num-traits = "0.2"
+unicode-general-category = "1.1.0"
+unicode-normalization = "0.1.25"
+yaml-rust2 = "0.10"
+
+[dev-dependencies]
+regex = "1"

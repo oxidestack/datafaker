@@ -1,0 +1,32 @@
+# Public denylist hits in verbatim or recorded third-party data: `<path>  <sha256 of the line>  # <reason>`.
+resources/_AM.yml  1a2db040471ea4ccd724c6854a179fe615c22c50f1392a101bf0c43156a5071f  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/_AR.yml  753fbd412c6887f42b7118519f06b4305bc35747630d8273c7b5a5d0cfa55a69  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/_BY.yml  47523e276bcc0c7fbf8d3886bfd71cd5e510c66ecf5c9c7b4e1c1db64297205e  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/_ES.yml  753fbd412c6887f42b7118519f06b4305bc35747630d8273c7b5a5d0cfa55a69  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/_RU.yml  47523e276bcc0c7fbf8d3886bfd71cd5e510c66ecf5c9c7b4e1c1db64297205e  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/_SK.yml  50793cb15fa0f51491a5bcb15d4de53f886318571b1e4067c97404dbdb47133a  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/_TR.yml  07b569bc538e16ca037196c279f08bea299437dff09edb8af97901610d761d7e  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/cs.yml  50793cb15fa0f51491a5bcb15d4de53f886318571b1e4067c97404dbdb47133a  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/address.yml  6b3cd32208db458c0367e2773a95f92f624eeff8ab712f3159aeeef2e27de741  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/aviation.yml  eee01ef87abf16e1b3d030670633a95e74241763c252f4bbc1988ab5d43f0f1c  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/aviation.yml  c0a37059def8b1f7a4936b98ccb71671e70d40a6ee20892a2c5884e575be896b  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/coffee.yml  94d4758a1e5e7861ec071bc5633cf294cb34b0dc0979db46a41c703cd495e155  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/internet.yml  745e8b99c98c1388a0f3f28d5c70714df479d404488acab0c909d52820949265  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/internet.yml  83d4641cede56da9c6e7e0d8a8cccbc938c4c3d935d4fb84f339faca0c6216df  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/internet.yml  f101f956f1cd68d1b375ef646b1a64b890870b24c4cc47960ba9fd1026bd28c5  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/internet.yml  6ae0a0339db2685ba77982eb03f1196ba8548371aaf3952a7293dbdd825658a4  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/internet.yml  78d143863e7b7b7414491f82a61d5ce1161fe074fdcba53db3483154ad95c710  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/en/internet.yml  662463e57aa40896f0444fc0e75825f06454ccd06a7e4384a6530e66abfcb76a  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/es-MX.yml  ed0357b710881fdd2df8bf3bc350e2295b2aba0abc34648acbbeca1775c4accc  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+resources/es-MX.yml  b1f0cd46c6e9ab6f1abd4af767d8866f2b5c4e8b84caa96ee9afa5f25b4f4f4d  # Datafaker's locale data, copied verbatim (Apache-2.0, NOTICE)
+src/java/time/tzdb.bin  4a1c571c5ea86bcb4c5a45dd523547bc31d358c4292d53964f08e79c44e6cf60  # the IANA time-zone database, a public zone name
+src/providers/internet.rs  7b76d9109b1802bf47405341af3017aa2a6ee8325571a8b145e2e7612754f8f9  # a public web crawler's user agent, ported verbatim from Datafaker's Internet provider
+src/providers/internet.rs  156406ef8de685c3dd3d7ccba64398c516e8b85bc00d1f07d8c15982fa2b6422  # a public web crawler's user agent, ported verbatim from Datafaker's Internet provider
+src/providers/internet.rs  7af2bdbc31dbd0a05db6296765c5a141bba526c7d1c1e5821380434fbe3f7ed3  # a public web crawler's user agent, ported verbatim from Datafaker's Internet provider
+src/providers/internet.rs  cbb0164f9c60deb383ad558b174a0fe3945f542b66ce79b52344e4d3dd50106b  # a public web crawler's user agent, ported verbatim from Datafaker's Internet provider
+tests/vectors/faker.tsv  682cac351fdba29cce36827cfe5a066a0ae403226f681deed560fbf8aa97f27b  # a vector recorded from Datafaker's own output over its public locale data
+tests/vectors/faker.tsv  e53cf2bd63c50a79a314454eb2d41f2a30832dfd23ccbd032eecadf56e2a5e85  # a vector recorded from Datafaker's own output over its public locale data
+tests/vectors/locales.tsv  9533076313e5d3ddd10c44e52d3dd24fdad566b204c7194a18fac7b13b08b453  # a vector recorded from Datafaker's own output over its public locale data
+tests/vectors/locales.tsv  e1e5a38ad5a0b413ba10db72886a9c4ade62440349664f45a6d3eba04173b7fc  # a vector recorded from Datafaker's own output over its public locale data
+tests/vectors/providers_t4.tsv  ec05f6eb37dea1439642160237a0f9e1b6f5fb9d88cfa721eccd00b041e27a71  # a vector recorded from Datafaker's own output over its public locale data
+src/providers/internet.rs  eb1e0136fc9a5afaf56944c624ad3594358a4df6c4948ed8364feef020b6cc10  # a user-agent constant ported from upstream Datafaker, not a private name

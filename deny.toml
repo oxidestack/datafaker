@@ -1,0 +1,60 @@
+# cargo-deny's policy: `make deny` runs `cargo deny check`. Every section fails the gate on a finding; an accepted
+# one is an entry here with its reason.
+
+[graph]
+targets = [
+    "aarch64-unknown-linux-gnu",
+    "x86_64-unknown-linux-gnu",
+    "aarch64-apple-darwin",
+]
+
+[advisories]
+# RustSec: a vulnerability, an unsound crate, an unmaintained crate or a yanked version fails the gate.
+unmaintained = "all"
+yanked = "deny"
+# No advisory is ignored.
+ignore = []
+
+[licenses]
+# The CNCF allowlist (cncf/foundation policies-guidance/allowed-third-party-license-policy.md) and Apache-2.0: a crate
+# passes when its licence expression is satisfiable from these alone. Nothing joins this list that the CNCF's does not
+# carry; a crate that needs another licence is an exception, scoped to that crate, with its CNCF exception status.
+allow = [
+    "0BSD",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-2-Clause-FreeBSD",
+    "BSD-3-Clause",
+    "ISC",
+    "MIT",
+    "MIT-0",
+    "OpenSSL",
+    "OpenSSL-standalone",
+    "PostgreSQL",
+    "PSF-2.0",
+    "Python-2.0",
+    "Python-2.0.1",
+    "SSLeay-standalone",
+    "UPL-1.0",
+    "X11",
+    "Zlib",
+]
+# The list is the CNCF's, not the graph's: an entry no crate uses today is not a finding.
+unused-allowed-license = "allow"
+confidence-threshold = 0.93
+
+[bans]
+multiple-versions = "deny"
+wildcards = "deny"
+# yaml-rust2 0.10 reaches hashbrown 0.15 through hashlink, indexmap reaches 0.17 (2026-11-17): the duplicate goes when
+# yaml-rust2 or hashlink moves to hashbrown 0.17.
+skip = [
+    { crate = "hashbrown@0.15.5", reason = "yaml-rust2 -> hashlink pins hashbrown 0.15; indexmap uses 0.17" },
+]
+# `libphonenumber` is a path dependency on a sibling checkout: no version to pin.
+allow-wildcard-paths = true
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]

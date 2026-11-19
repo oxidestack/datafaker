@@ -1,0 +1,17 @@
+datafaker
+Copyright 2026 The datafaker authors
+
+This product is an unofficial Rust port of Datafaker 2.7.0 (https://www.datafaker.net/), Copyright the Datafaker authors,
+Apache-2.0. The locale files in resources/ are Datafaker's, copied verbatim, and remain under that license, as do
+the ported behaviour and any test inputs taken from it.
+
+src/rgxgen/ ports the generation path of RgxGen 3.1 (https://github.com/curious-odd-man/RgxGen), Copyright
+curious-odd-man, Apache-2.0, which Datafaker uses for regexify.
+
+src/java/time/tzdb.bin holds the time-zone rules of the IANA tz database (release 2025b, public domain,
+https://www.iana.org/time-zones) and the en_US zone names of the Unicode CLDR (Unicode license), as JDK 25.0.2
+reports them, written in a format of this crate's own by scripts/tz-tables.sh.
+
+tests/anchors.rs holds values recorded from MockServer 8.0.0 (https://github.com/mock-server/mockserver, Apache-2.0),
+which runs Datafaker; tests/vectors/ holds outputs recorded from the real Datafaker 2.7.0 with libphonenumber 9.0.41,
+the version MockServer 9.2.0 runs it with.
