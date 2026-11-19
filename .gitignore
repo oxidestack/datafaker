@@ -1,5 +1,4 @@
 target/
-Cargo.lock
 __pycache__/
 # The documentation site's build output and staged pages (site/.gitignore says the same)
 /site/node_modules/

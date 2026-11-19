@@ -41,6 +41,9 @@ allow = [
 ]
 # The list is the CNCF's, not the graph's: an entry no crate uses today is not a finding.
 unused-allowed-license = "allow"
+# unicode-normalization stays at 0.1.25 in the committed Cargo.lock: 0.1.26 is "(MIT OR Apache-2.0) AND Unicode-3.0",
+# and Unicode-3.0 is not on the CNCF allowlist, nor has it a CNCF exception (exceptions.cncf.io, checked 2026-11-19).
+# `cargo update` must not take it past 0.1.25 until one exists; this gate refuses it if it does.
 confidence-threshold = 0.93
 
 [bans]
